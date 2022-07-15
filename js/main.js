@@ -1,17 +1,3 @@
-/*Descrizione:
-Visualizzare in pagina 5 numeri casuali. Da lì parte un timer di 30 secondi.
-Dopo 30 secondi l’utente deve inserire, uno alla volta, i numeri che 
-ha visto precedentemente, tramite il prompt().
-Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali 
-dei numeri da indovinare sono stati individuati.*/
-
-
-/*
-1.faccio generare 5 numeri casuali   V
-2.genero una funzione di settimeout
-3.dopo 30 secondi richiama la funzione che mi fa sparire i numeri e apparire i prompt di confronto
-4.Stampo i numeri confrontati solo se sono uguali a quelli casuali prima generati
-*/
 
 //creazione numeri casuali
 let myArray = generaCasualiPush(1, 99);
@@ -29,28 +15,19 @@ function svuota(){
 setTimeout(promptfunction, 4000)
 //funzione 5 prompt 
 function promptfunction(){
-    let num;
+    let num = 0;
     let arrayprompt = [];
     for (let i = 0; i < 5; i++){
-        num = prompt('inserisci numero');
+        num = parseInt(prompt('inserisci numero'));
 
         if(myArray.includes(num)){
-
             arrayprompt.push(num);
         }
+        numeriDom.innerHTML = arrayprompt;
     }
-    
     
 
 }
-
-
-
-
-
-
-
-
 
 
 //funzione numeri casuali
