@@ -23,17 +23,13 @@ function svuota(){
 
 
 
-
-
-
-
 setTimeout(promptfunction, 7500)
 //funzione 5 prompt 
 function promptfunction(){
     let num = 0;
     let arrayprompt = [];
     for (let i = 0; i < 5; i++){
-       num = parseInt(prompt('inserisci numero'));
+       //num = parseInt(prompt('inserisci numero'));
 
         if(myArray.includes(num)){
             arrayprompt.push(num);
