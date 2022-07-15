@@ -5,28 +5,41 @@ let myArray = generaCasualiPush(1, 99);
 let numeriDom = document.getElementById('numeri');
 numeriDom.innerHTML = myArray;
 
-setTimeout(svuota, 3000)
+//contatore
+let contatoreDom = document.getElementById('contatore');
+let numero = 0;
+
+let clock = setInterval(function(){
+    numero++;
+    contatoreDom.innerHTML = numero;
+}, 1000);
+
+setTimeout(svuota, 7000)
 function svuota(){
     numeriDom.innerHTML = '';
+    contatoreDom.innerHTML = '<spna><i class="fa-solid fa-clock"></i></spna>'
+    clearInterval(clock);
 }
 
 
 
-setTimeout(promptfunction, 4000)
+
+
+
+
+setTimeout(promptfunction, 7500)
 //funzione 5 prompt 
 function promptfunction(){
     let num = 0;
     let arrayprompt = [];
     for (let i = 0; i < 5; i++){
-        num = parseInt(prompt('inserisci numero'));
+       num = parseInt(prompt('inserisci numero'));
 
         if(myArray.includes(num)){
             arrayprompt.push(num);
         }
         numeriDom.innerHTML = arrayprompt;
     }
-    
-
 }
 
 

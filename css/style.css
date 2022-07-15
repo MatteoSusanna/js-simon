@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 #container{
     background-color: #0f0e17;
     display: flex;
@@ -14,9 +18,28 @@
 }
 
 #container-numeri{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
-    width: 400px;
+    width: 500px;
     background-color: #e53170;
     border: 3px solid #ff8906;
     font-size: 60px;
+}
+
+#contatore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: #e53170;
+    border: 3px solid #ff8906;
+    border-radius: 50%;
+    font-size: 50px;
+}
+
+h2{
+    color: white;
 }
