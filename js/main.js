@@ -14,7 +14,7 @@ let clock = setInterval(function(){
     contatoreDom.innerHTML = numero;
 }, 1000);
 
-setTimeout(svuota, 7000)
+setTimeout(svuota, 11000)
 function svuota(){
     numeriDom.innerHTML = '';
     contatoreDom.innerHTML = '<spna><i class="fa-solid fa-clock"></i></spna>'
@@ -23,13 +23,13 @@ function svuota(){
 
 
 
-setTimeout(promptfunction, 7500)
+setTimeout(promptfunction, 11500)
 //funzione 5 prompt 
 function promptfunction(){
     let num = 0;
     let arrayprompt = [];
     for (let i = 0; i < 5; i++){
-       //num = parseInt(prompt('inserisci numero'));
+       num = parseInt(prompt('inserisci numero'));
 
         if(myArray.includes(num)){
             arrayprompt.push(num);
