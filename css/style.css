@@ -44,3 +44,17 @@ body{
 h2{
     color: white;
 }
+
+i{
+    animation: ex 3s linear infinite;
+}
+
+@keyframes ex {
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
